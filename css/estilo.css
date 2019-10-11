@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+#site{width: 1440px;}
+.cabecalho{width: 100%; height: 100px; display: flex; justify-content: space-between; align-items: center; }
+.imagem_cabecalho{margin-left: 40px;}
+.cabecalho_menu{list-style: none; display: flex;}
+.cabecalho_link{margin-right: 30px; text-decoration: none; font-family: 'Rubik', sans-serif; font-size: 14px; text-transform: uppercase; color: #252b46;}
+.cabecalho_link:hover{color: #fa5757; transition: color 0.2s;}
+.cabecalho_botao_login{margin-right: 14px;border-radius: 4px; text-transform: uppercase; background-color: #fa5757; color: #FFFFFF; padding: 10px 20px; border: 1px solid #FFFFFF; width: 80px; font-size: 14px; font-family: 'Rubik', sans-serif;}
+.cabecalho_botao_login:hover{background-color: #FFFFFF; color: #fa5757; border: thin solid #fa5757; transition: 0.2s;  }
+.container{display: flex; align-items: center; margin-right: 40px;}
