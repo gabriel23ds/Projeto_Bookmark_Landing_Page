@@ -4,12 +4,109 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
-#site{width: 1440px;}
-.cabecalho{width: 100%; height: 100px; display: flex; justify-content: space-between; align-items: center; }
-.imagem_cabecalho{margin-left: 40px;}
-.cabecalho_menu{list-style: none; display: flex;}
-.cabecalho_link{margin-right: 30px; text-decoration: none; font-family: 'Rubik', sans-serif; font-size: 14px; text-transform: uppercase; color: #252b46;}
-.cabecalho_link:hover{color: #fa5757; transition: color 0.2s;}
-.cabecalho_botao_login{margin-right: 14px;border-radius: 4px; text-transform: uppercase; background-color: #fa5757; color: #FFFFFF; padding: 10px 20px; border: 1px solid #FFFFFF; width: 80px; font-size: 14px; font-family: 'Rubik', sans-serif;}
-.cabecalho_botao_login:hover{background-color: #FFFFFF; color: #fa5757; border: thin solid #fa5757; transition: 0.2s;  }
-.container{display: flex; align-items: center; margin-right: 40px;}
+#pagina{
+	width: 100%; 
+	height: 100%;
+}
+
+/*Navegação e Cabeçalho*/
+.cabecalho {
+
+	width: 100%; 
+	height: 120px; 
+	display: flex; 
+	justify-content: 
+	space-between; 
+	align-items: center; 
+}
+
+.logo {
+
+	margin-left: 20px;
+}
+
+.navegacao_list {
+
+	list-style: none;
+
+	display: flex;
+}
+
+.navegacao_link {
+
+	margin-right: 40px; 
+
+	text-decoration: none;
+
+	font-family: 'Rubik', sans-serif;
+
+	font-size: 13px; 
+
+	text-transform: uppercase; 
+
+	color: #252b46;
+
+	letter-spacing: 2px;
+}
+
+.navegacao_link:hover{color: #fa5757; transition: color 0.2s;}
+.navegacao{display: flex; align-items: center; margin-right: 40px; list-style-type: none;}
+.botao_login{ font-weight: 500; ;margin-right: 12px; border-radius: 6px; text-transform: uppercase; background-color: #fa5757; color: #FFFFFF; padding: 12px 10px; border: 2px solid #FFFFFF; width: 110px; letter-spacing: 1.5px; ; font-size: 13px; font-family: 'Rubik', sans-serif;}
+.botao_login:hover{background-color: #FFFFFF; color: #fa5757; border: thin solid #fa5757; transition: 0.2s; border: #fa5757 solid 2px;  }
+
+
+/*Seção de Apresentação da Página*/
+.secao_apresentacao{width: 100%;display: flex; margin-top: 10px; height: 530px; align-items: center; font-family: 'Rubik', sans-serif; justify-content: center;}
+.imagem_secao{width: 550px; line-height: 50%;}
+.titulo_principal{ margin-left: 20px; font-weight: 600; ;font-size: 37px; font-family: 'Rubik', sans-serif; color: #252b46; width: 400px; left: 0;}
+.titulo_secundario{font-weight: 600; ;font-size: 30px; font-family: 'Rubik', sans-serif; color: #252b46;}
+.botao{padding: 12px 30px; width: 160px; border-radius: 5px; font-family: 'Rubik', sans-serif; margin-right: 10px; margin-top: 10px; font-size: 12px; font-weight: 500;  }
+.botao_azul{ margin-left: 20px; background-color: #5367DA ; color: #FFFFFF; border: #5367DA solid 2px; }
+.botao_azul:hover{background-color: #FFFFFF; border: solid 2px #5367DA; color: #5367DA; transition: 0.2s; }
+.botao_cinza{background-color: #F7F7F7 ; color: #252b46; border: #F7F7F7  solid thin;}
+.botao_cinza:hover{background-color: #FFFFFF; border: solid 2px #9194a1; color: #9194a1; transition: 0.2s; }
+.fundo_imagem{width: 400px; height: 300px; background-color: #5367DA; border-bottom-left-radius: 200px; position: absolute; display: inline-block; right: 0; margin-top: 150px; z-index: -1;}
+.descricao{ margin-left: 20px;line-height: 28px; margin-top: 24px; margin-bottom: 24px; color: #9194a1; font-family: 'Rubik', sans-serif; }
+
+/*Rodapé da Página*/
+.rodape_superior{background-color: #5367DA; width: 100%; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.rodape_inferior{background-color: #252b46; width: 100%; height: 80px; display: flex; justify-content: space-between; align-items: center; color: #FFFFFF}
+.rodape_link{ letter-spacing: 1.5px; margin-left: 40px; text-decoration: none; font-family: 'Rubik', sans-serif; font-size: 13px; text-transform: uppercase; color: #FFFFFF;}
+.nav_rodape{list-style: none; display: flex; margin-left: 22px; line-height: 50%;}
+.midias_sociais{color: #FFFFFF; margin-right: 11px; font-size: 25px;}
+.container{display: flex; align-items: center;}
+.navegacao_inferior{list-style: none; display: flex; margin-right: 40px;}
+.botao_footer{border-radius: 4px; background-color: #fa5757; color: #FFFFFF; padding: 10px 20px; border: 1px solid #fa5757; width: 120px; font-size: 13.7px; font-family: 'Rubik', sans-serif;}
+.input{width: 255px; height: 40px; border-radius: 4px; border: 0px; margin-right: 8px; padding-left: 20px;}
+.descricao_rodape { letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; color: #FFFFFF; font-family: 'Rubik', sans-serif; font-size: 13px;}
+.titulo_footer{font-weight: 500; font-size: 32px; font-family: 'Rubik', sans-serif; color: #FFFFFF; text-align: center; padding-bottom: 35px; padding-top: 35px;}
+.midias_sociais:hover{color: #fa5757; transition: 0.2s;}
+.rodape_link:hover{color:  #fa5757;  transition: 0.2s}
+::-webkit-input-placeholder {
+   font-family: 'Rubik', sans-serif;
+}
+
+/*Seção Features*/
+.features{justify-content: center; text-align: center; flex-direction: column; height: 100%px; border: none;}
+.navegacao_features{display: flex; justify-content: space-between; width: 600px; margin-left: 17%; border-bottom: thin #9194a1 solid; padding-bottom: 25px; padding-left: 40px; padding-right: 40px; margin-top: 50px;}
+.botao_features{background-color: transparent; border: none; margin-right: 40px; font-family: 'Rubik', sans-serif; font-size: 14px; color: #252b46;}
+.botao_features:hover{color: #fa5757; transition: 0.2s; }
+.secoes_features{margin-top: 100px;}
+
+.download{height: 650px; display: flex; justify-content: center; text-align: center; flex-direction: column;}
+.download_chrome{width: 200px; height: 280px; border: #9194a1 thin solid; margin-right: 30px; border-radius: 5px;}
+.download_firefox{width: 200px; height: 280px; border: #9194a1 thin solid; margin-right: 30px; border-radius: 5px;}
+.download_opera{width: 200px; height: 280px; border: #9194a1 thin solid; margin-right: 30px; border-radius: 5px;}
+.container_download{display: flex; justify-content: center;}
+.logo_download{width: 67px; margin-top: 25px; margin-bottom: 15px;}
+.botao_download{align-self: center; text-align: center; padding: 10px 10px; border-radius: 5px; background-color: #5367DA; color: #FFFFFF; border: solid thin #5367DA; font-family: 'Rubik', sans-serif; font-size: 12px; font-weight: 500; margin-top: 35px;}
+.titulo_extensao{color: #252b46; font-family: 'Rubik', sans-serif; font-size: 14.5px; margin-bottom: 8px; }
+.descricao_extensao{color: #9194a1; font-family: 'Rubik', sans-serif; font-size: 11px; margin-bottom: 18px;}
+.botao_download:hover{background-color: #FFFFFF; border: solid 2px #5367DA; color: #5367DA; transition: 0.2s; }
+
+.botao_azul_questions{align-self: center; width: 120px; margin-bottom: 90px; margin-top: 45px;}
+.questions{height: 100%; display: flex; justify-content: center; text-align: center; flex-direction: column; margin-top: 20px; }
+.botoes_question{padding: 17px 17px; background-color:#FFFFFF; text-align: left; font-family: 'Rubik', sans-serif; font-size: 15px; color: #252b46; border-bottom: solid thin #9194a1; border-left: 0px; border-right: 0px; border-top: 0px; }
+.hidden{display: none;}
+.mais_duvidas{display: flex; flex-direction: column; width: 450px; align-self: center;}
+.descricao_lista{text-align: left; margin-top: 38px; margin-bottom: 38px;}

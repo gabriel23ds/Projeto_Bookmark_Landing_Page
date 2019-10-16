@@ -1,40 +1,200 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bookmark</title>
+	<title>Bookmark</title> <!--Titulo do Site-->
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script type="text/javascript"></script>
-</head>
-<body>
-	<main #id="site">
-		<header class="cabecalho">
-			<div class="imagem_cabecalho">
-				<img src="Imagens/logo-bookmark.svg" class="logo">
-			</div> <!--Logo do Cabeçalho-->
-			<div class="container">
-			<ul class="cabecalho_menu">
-				<li><a href="" class="cabecalho_link">Features</a></li>  
-				<li><a href="" class="cabecalho_link">Pricing</a></li>
-				<li><a href="" class="cabecalho_link">Contact</a></li>
-			</ul>
-			<button class="cabecalho_botao_login">Login</button>
-			</div>  <!--Navegação Cabeçalho-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"> <!--Link Externo CSS-->
+	<script type="text/javascript">
+		function mostra(id){
+			if (document.getElementById(id).style.display == 'block') {
+			document.getElementById(id).style.display = 'none';
+		} else {document.getElementById(id).style.display = 'block';}
+		}
 
+		function apresenta(){
+			document.getElementById('simple').style.display == 'block'
+		}
+		
+	</script> <!--Link Externo JavaScript-->
+	<script src="https://kit.fontawesome.com/e4e3262e82.js" crossorigin="anonymous"></script> 
+	<!--Link Externo FontAwesome-->
+</head>
+
+<body>
+	<main id="pagina">
+
+		<header class="cabecalho"> <!--Cabeçalho da Minha Página-->
+			<div class="logo"> <!-- Div - Logo do Cabeçalho-->
+				<img src="Imagens/logo-bookmark.svg">
+			</div> 
+
+		<nav class="navegacao"> <!-- Div - Navegação do Cabeçalho-->
+			<ul class="navegacao_list"> <!--Lista de Navegação-->
+				<li><a href="#" class="navegacao_link">Features</a></li>  
+				<li><a href="#" class="navegacao_link">Pricing</a></li>
+				<li><a href="#" class="navegacao_link">Contact</a></li>
+			</ul>
+			<button class="botao_login">Login</button>
+		</nav>  
 		</header>
 
-		<section>
-			<h1>A Simple Bookmark Manager</h1> 
-			<!--H1 Principal do site como nome do site-->
-			<p>A Clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p> 
+	<section class="secao_apresentacao">
+		<div>
+			<h1 class="titulo_principal">A Simple Bookmark Manager</h1> 
+			<!--Titulo Principal do site-->
+			<p class="descricao">A clean and simple interface to organize your favorite<br> websites. Open a new browser tab and see your sites load<br>instantly. Try it for free.</p>
 			<!-- Descrição do Site-->
-			<button>Get it on Chrome</button>
-			<button>Get it on Firefox</button>
+			
+				<button class="botao_azul botao">Get it on Chrome</button>
+				<button class="botao_cinza botao">Get it on Firefox</button>
+		</div>
 			<!--Botoes de Download para diferentes plataformas-->
-			<br>
-			<img src="Imagens/illustration-hero.svg"> <!--Imagem da Seção principal-->
-		</section>
-	</main>
+		</div>
 
-</body>
+		<div> 
+			<div class="fundo_imagem"> <!-- Fundo azul da Imagem Principal-->
+			</div>
+			<img src="Imagens/illustration-hero.svg" class="imagem_secao"> <!--Imagem principal-->
+		</div>
+	</section>
+
+	<section class="features">
+	<div>
+		<h2 class="titulo_secundario">Features</h2>
+		<p class="descricao">Our aim is to make it quick and easy for you to access your<br>favourite websites. Your bookmarks sync between your devices<br>so you can access them on the go.</p>
+	</div>
+	<div>
+		<ul class="navegacao_features">
+				<button  class="botao_features" onclick="apresenta()">Simple Bookmarking</button>
+
+				<button class="botao_features">Speedy Searching</button>
+
+				<button class="botao_features">Easy Sharing</button>
+		</ul> 
+	</div>
+
+	<div id="simple" class="secoes_features hidden">
+		<h2 class="titulo_secundario">Bookmark in one click</h2>
+		<p class="descricao">organize your bookmarks however you like. Our<br>simple drag-and-drop interface gives you complete<br>control over how you manage your favourite sites.</p>
+		<button class="botao_azul botao botao_azul_questions">More Info</button>
+	</div>
+
+	<div id="features-search" class="secoes_features hidden">
+		<h2 class="titulo_secundario">Intelligent search</h2>
+		<p class="descricao">Our powerful search future will help you find saved<br>sites in no time at all. No need to trawl through all of<br>your bookmarks.</p>
+		<button class="botao_azul botao botao_azul_questions">More Info</button>
+	</div>
+
+	<div id="features-share" class="secoes_features hidden">
+		<h2 class="titulo_secundario">Share your bookmarks</h2>
+		<p class="descricao">Easily your bookmarks and collections with<br>others. Create a shareable link that you can send at<br>the click of a button.</p>
+		<button class="botao_azul botao botao_azul_questions">More Info</button>
+	</div>
+
+	</section>
+
+	<section class="download">
+		<h2 class="titulo_secundario">Download the extension</h2>
+		<p class="descricao">We've got more browsers in the pipeline. Please do let us know if<br>you've got a favourite you'd like us to prioritize</p>
+		<div class="container_download">
+
+		<div class="download_chrome">
+		<img src="Imagens/logo-chrome.svg" class="logo_download" >
+		<h3 class="titulo_extensao">Add to Chrome</h3>
+		<p class="descricao_extensao">Minimum version 62</p>
+		<img src="Imagens/bg-dots.svg" width="202px;">
+		<button class="botao_download">Add & Install Extension</button>
+		</div>
+
+		<div class="download_firefox">
+		<img src="Imagens/logo-firefox.svg" class="logo_download">
+		<h3 class="titulo_extensao">Add to Firefox</h3>
+		<p class="descricao_extensao">Minimum version 55</p>
+		<img src="Imagens/bg-dots.svg" width="202px;">
+		<button class="botao_download">Add & Install Extension</button>
+		</div>
+
+		<div class="download_opera">
+		<img src="Imagens/logo-opera.svg" class="logo_download">
+		<h3 class="titulo_extensao">Add to Opera</h3>
+		<p class="descricao_extensao">Minimum version 46</p>
+		<img src="Imagens/bg-dots.svg" width="202px;">
+		<button class="botao_download">Add & Install Extension</button>
+		</div>
+		</div>
+	</section>
+
+	<section class="questions">
+		<h2 class="titulo_secundario">Frequently Asked Questions</h2>
+		<p class="descricao">Here are some of our FAQs. if you have any other questions<br>you'd like answered please feel free to email us.</p>
+		
+
+			<div  class="mais_duvidas">
+			<button class="botoes_question" style="border-top:  solid thin #9194a1;" onclick="mostra('q1')">
+			What is Bookmark?
+			<i class="fas fa-chevron-down" style="float: right; font-size: 22px; color: #5367DA;"></i>
+		</button>
+			<div id="q1" class="hidden">
+				<p class="descricao descricao_lista" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<button class="botoes_question" onclick="mostra('q2')">
+			How can I request a new browser
+			<i class="fas fa-chevron-down" style="float: right; font-size: 22px; color: #5367DA;"></i>
+		</button>
+			<div id="q2" class="hidden">
+				<p class="descricao descricao_lista">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+			</div>
+			<button class="botoes_question" onclick="mostra('q3')">
+			Is there a mobile app
+				<i class="fas fa-chevron-down" style="float: right; font-size: 22px; color: #5367DA;"></i>
+		</button>
+			<div id="q3" class="hidden">
+				<p class="descricao descricao_lista">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+			</div>
+			<button class="botoes_question" onclick="mostra('q4')">
+			What about other Chronium browsers?
+		<i class="fas fa-chevron-down" style="float: right; font-size: 22px; color: #5367DA;"></i>
+		</button>
+			<div id="q4" class="hidden">
+					<p class="descricao descricao_lista">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			</div>
+		<button class="botao_azul botao botao_azul_questions">More Info</button>
+		
+	</section>
+
+	<footer> <!-- Inicio do Rodapé-->
+		<div class="rodape_superior"> <!--Rodapé Superior com um fundo Azul mais claro-->
+			<p style="" class="descricao_rodape">35,000+ Already Joined </p>
+			<h2 class="titulo_footer">Stay up-to-date with what<br>we´re doing</h2> 
+			<!--Titulo no Footer-->
+			<form>
+				<input type="email" name="" class="input" placeholder="Enter your email address">
+				<button class="botao_footer">Contact Us</button> <!-- Campo e Botão no Footer-->
+			</form>
+		</div>
+				
+			</div>
+			<div class="rodape_inferior"> <!--Rodapé Superior com um fundo Azul mais escuro-->
+				
+				<div class="container">
+					<img src="Imagens/logo-bookmark.svg" class="imagem_cabecalho">
+					<ul class="nav_rodape">
+					<li><a href="" class="rodape_link">Features</a></li>
+					<li><a href="" class="rodape_link">Pricing</a></li>
+					<li><a href="" class="rodape_link">Contact</a></li>
+				</ul>
+				</div>
+				<div>
+					<ul class="navegacao_inferior">
+					<li><a href="" class="midias_sociais"><i class="fab fa-facebook-square midias_sociais"></i></a></li>
+					<li><a href="" class="midias_sociais"><i class="fab fa-twitter midias_sociais"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</main>
+
+	</body>
+
 </html>
