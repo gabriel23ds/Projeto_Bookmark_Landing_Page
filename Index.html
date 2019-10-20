@@ -4,17 +4,7 @@
 	<title>Bookmark</title> <!--Titulo do Site-->
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"> <!--Link Externo CSS-->
-	<script type="text/javascript">
-		function mostra(id){
-			if (document.getElementById(id).style.display == 'block') {
-			document.getElementById(id).style.display = 'none';
-		} else {document.getElementById(id).style.display = 'block';}
-		}
-
-		function apresenta(){
-			document.getElementById('simple').style.display == 'block'
-		}
-		
+	<script type="text/javascript" src="script/Javascript.js">
 	</script> <!--Link Externo JavaScript-->
 	<script src="https://kit.fontawesome.com/e4e3262e82.js" crossorigin="anonymous"></script> 
 	<!--Link Externo FontAwesome-->
@@ -42,7 +32,7 @@
 		<div>
 			<h1 class="titulo_principal">A Simple Bookmark Manager</h1> 
 			<!--Titulo Principal do site-->
-			<p class="descricao">A clean and simple interface to organize your favorite<br> websites. Open a new browser tab and see your sites load<br>instantly. Try it for free.</p>
+			<p class="descricao" style="margin-left: 20px;">A clean and simple interface to organize your favorite<br> websites. Open a new browser tab and see your sites load<br>instantly. Try it for free.</p>
 			<!-- Descrição do Site-->
 			
 				<button class="botao_azul botao">Get it on Chrome</button>
@@ -59,36 +49,62 @@
 	</section>
 
 	<section class="features">
-	<div>
-		<h2 class="titulo_secundario">Features</h2>
-		<p class="descricao">Our aim is to make it quick and easy for you to access your<br>favourite websites. Your bookmarks sync between your devices<br>so you can access them on the go.</p>
-	</div>
-	<div>
-		<ul class="navegacao_features">
-				<button  class="botao_features" onclick="apresenta()">Simple Bookmarking</button>
-
-				<button class="botao_features">Speedy Searching</button>
-
-				<button class="botao_features">Easy Sharing</button>
-		</ul> 
+	<div class="features">
+		<h2 class="titulo_secundario" style="text-align: center;">Features</h2>
+		<p class="descricao" style="text-align: center;">Our aim is to make it quick and easy for you to access your<br>favourite websites. Your bookmarks sync between your devices<br>so you can access them on the go.</p>
 	</div>
 
-	<div id="simple" class="secoes_features hidden">
+	<div class="box_features">
+	
+		<div class="navegacao_features" style="text-align: center;">
+
+			<button  class="botao_features" onclick="features('f1')">Simple Bookmarking</button>
+
+			<button class="botao_features" onclick="features('f2')">Speedy Searching</button>
+
+			<button class="botao_features" onclick="features('f3')">Easy Sharing</button>
+		</div> 
+
+	</div>
+
+	<div id="f1" class="hidden" style="display: flex;">  
+		<div>
+			<div class="fundo_imagem_features"></div>
+			<img src="Imagens/illustration-features-tab-1.svg" class="Imagem_feature">
+		</div>
+		<div>
 		<h2 class="titulo_secundario">Bookmark in one click</h2>
 		<p class="descricao">organize your bookmarks however you like. Our<br>simple drag-and-drop interface gives you complete<br>control over how you manage your favourite sites.</p>
-		<button class="botao_azul botao botao_azul_questions">More Info</button>
+		<button class="More_info">More Info</button>
+		</div>
 	</div>
 
-	<div id="features-search" class="secoes_features hidden">
+	<div id="f2" class="hidden">
+		<div>
+			<div class="fundo_imagem_features fundo_imagem_features_largura2"></div>
+			<img src="Imagens/illustration-features-tab-2.svg" class="Imagem_feature">
+		</div>
+
+		<div>
 		<h2 class="titulo_secundario">Intelligent search</h2>
 		<p class="descricao">Our powerful search future will help you find saved<br>sites in no time at all. No need to trawl through all of<br>your bookmarks.</p>
-		<button class="botao_azul botao botao_azul_questions">More Info</button>
+		<button class="More_info">More Info</button>
+		</div>
+
 	</div>
 
-	<div id="features-share" class="secoes_features hidden">
+	<div id="f3" class="hidden">
+		<div>
+			<div class="fundo_imagem_features fundo_imagem_features_largura"></div>
+			<img src="Imagens/illustration-features-tab-3.svg" class="Imagem_feature">
+		</div>
+
+		<div>
 		<h2 class="titulo_secundario">Share your bookmarks</h2>
 		<p class="descricao">Easily your bookmarks and collections with<br>others. Create a shareable link that you can send at<br>the click of a button.</p>
-		<button class="botao_azul botao botao_azul_questions">More Info</button>
+		<button class="More_info">More Info</button>
+
+		</div>
 	</div>
 
 	</section>
@@ -126,7 +142,7 @@
 
 	<section class="questions">
 		<h2 class="titulo_secundario">Frequently Asked Questions</h2>
-		<p class="descricao">Here are some of our FAQs. if you have any other questions<br>you'd like answered please feel free to email us.</p>
+		<p class="descricao" style="margin-bottom: 40px; margin-top: 35px;">Here are some of our FAQs. if you have any other questions<br>you'd like answered please feel free to email us.</p>
 		
 
 			<div  class="mais_duvidas">
@@ -159,17 +175,17 @@
 					<p class="descricao descricao_lista">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 			</div>
-		<button class="botao_azul botao botao_azul_questions">More Info</button>
+		<button class="More_info botao_azul_questions">More Info</button>
 		
 	</section>
 
 	<footer> <!-- Inicio do Rodapé-->
 		<div class="rodape_superior"> <!--Rodapé Superior com um fundo Azul mais claro-->
-			<p style="" class="descricao_rodape">35,000+ Already Joined </p>
+			<p style="" class="descricao_rodape">35.000+ Already Joined </p>
 			<h2 class="titulo_footer">Stay up-to-date with what<br>we´re doing</h2> 
 			<!--Titulo no Footer-->
-			<form>
-				<input type="email" name="" class="input" placeholder="Enter your email address">
+			<form name="formulario">
+				<input type="email" name="email" class="input" placeholder="Enter your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required oninvalid="setCustomValidity('Whoops, make sure it\'s an email')" onchange="try{setCustomValidity('')}catch(e){}">
 				<button class="botao_footer">Contact Us</button> <!-- Campo e Botão no Footer-->
 			</form>
 		</div>
@@ -178,7 +194,7 @@
 			<div class="rodape_inferior"> <!--Rodapé Superior com um fundo Azul mais escuro-->
 				
 				<div class="container">
-					<img src="Imagens/logo-bookmark.svg" class="imagem_cabecalho">
+					<img src="Imagens/logo2.png" class="imagem_cabecalho" style=" margin-left: 20px; margin-top: 3.8px;">
 					<ul class="nav_rodape">
 					<li><a href="" class="rodape_link">Features</a></li>
 					<li><a href="" class="rodape_link">Pricing</a></li>
